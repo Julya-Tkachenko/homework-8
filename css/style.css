@@ -143,12 +143,27 @@ body {
 
 .hero {
     height: 600px;
-    background: #2F303A;
+    background: url(../img/solutions-img.jpg) no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
+.hero::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: #2F303A;
+    opacity: 0.4;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 5;
+}
 .hero-title {
     font-size: 44px;
     font-weight: 900;
@@ -176,7 +191,7 @@ body {
 
 /* About */
 .about {
-    padding: 94px 0 0;
+    padding: 94px 0;
 }
 
 .about-cards {
@@ -188,6 +203,32 @@ body {
     flex: 1 1 25%;
 }
 
+.about-image {
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 4px;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.icon-1 {
+    background-image: url(../img/vector-1.png);
+}
+
+.icon-2 {
+    background-image: url(../img/vector-2.png);
+}
+
+.icon-3 {
+    background-image: url(../img/vector-3.png);
+}
+
+.icon-4 {
+    background-image: url(../img/vector-4.png);
+}
+
 .about-title {
     margin: 0 0 10px;
     text-transform: uppercase;
@@ -196,7 +237,7 @@ body {
 
 .about-desc {
     color: #757575;
-    text-align: justify;
+    line-height: 24px;
 }
 
 /* Do */
