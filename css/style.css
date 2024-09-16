@@ -201,36 +201,35 @@ body {
 
 .about-card {
     flex: 1 1 25%;
+    position: relative;
+    padding-top: 120px;
 }
 
-.about-image {
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 4px;
-    width: 100%;
+.about-card::before {
+    content: "";
+    position: absolute;
     height: 120px;
-    margin-bottom: 30px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    background:#F5F4FA url(../img/vector-1.png) no-repeat 50%/70px 70px ;
 }
 
-.icon-1 {
-    background-image: url(../img/vector-1.png);
-}
-
-.icon-2 {
+.about-card:nth-child(2)::before {
     background-image: url(../img/vector-2.png);
 }
 
-.icon-3 {
+.about-card:nth-child(3)::before {
     background-image: url(../img/vector-3.png);
 }
 
-.icon-4 {
+.about-card:nth-child(4)::before {
     background-image: url(../img/vector-4.png);
 }
 
 .about-title {
-    margin: 0 0 10px;
+    margin: 30px 0 10px;
     text-transform: uppercase;
     font-weight: 700;
 }
