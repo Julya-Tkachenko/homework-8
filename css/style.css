@@ -336,6 +336,85 @@ body {
     text-align: center;
 }
 
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.team-list-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: all 0.5s linear;
+}
+
+.team-list-item svg {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    transition: all 0.5s linear;
+}
+
+.team-list-item a:hover {
+    background-color: #2196F3;
+}
+
+.team-list-item a:hover svg {
+    fill: #fff;
+}
+
+/* customers */
+
+.customers {
+    padding: 94px 0;
+}
+
+.customers-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.customers-list a {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.customers-list svg {
+    width: 160px;
+    height: 60px;
+    fill: #AFB1B8;
+    transition: all 0.5s linear;
+}
+
+
+.customers-list a:hover {
+   border: 1px solid #2196F3;
+}
+
+.customers-list a:hover svg {
+    fill:#2196F3;
+}
+
+
 /* Footer */
 
 .footer {
@@ -367,6 +446,61 @@ body {
 
 .footer-menu-item:hover {
     color: #2196F3;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: start;
+    column-gap: 70px;
+}
+
+.footer-left {
+    width: 230px;
+}
+
+.footer-right {
+    padding-top: 12px;
+}
+
+.footer-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.5s linear;
+}
+
+.footer-list svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    transition: all 0.5s linear;  
+}
+
+.footer-list-item a:hover {
+    background-color: #2196F3;
+}
+
+.footer-list-item a:hover svg {
+    fill: #fff;
+}
+
+.hidden {
+    display: none;
 }
 
 /* section-portfolio */
@@ -468,3 +602,4 @@ body {
     font-weight: 400;
     color: #757575;
 }
+
